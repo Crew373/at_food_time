@@ -1,0 +1,212 @@
+///*
+// * This is a manifest file that'll be compiled into application.css, which will include all the files
+// * listed below.
+// *
+// * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+// * vendor/assets/stylesheets directory can be referenced here using a relative path.
+// *
+// * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+// * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+// * files in this directory. Styles in this file should be added after the last require_* statement.
+// * It is generally better to create a new file per style scope.
+// *
+// *= require_tree .
+// *= require_self
+// */
+//
+//@import "bootstrap";
+//
+///* mixins, variables, etc. */
+//
+//
+//body {
+//  padding-top: 10%;
+//  width: 100%;
+//  text-align:center;
+//  font-family: verdana, arial, helvetica, sans-serif;
+//}
+//
+//table {
+//  margin-right: auto;
+//  margin-left: auto;
+//  width: 100%;
+//}
+//
+//section {
+//  overflow: auto;
+//}
+//
+//textarea {
+//  resize: vertical;
+//}
+//
+//.center {
+//  text-align: center;
+//  h1 {
+//    margin-bottom: 10px;
+//  }
+//}
+//
+//.notifications {
+//  text-align: center;
+//}
+//
+//
+//
+//
+///* typography */
+//
+//h1, h2, h3, h4, h5, h6 {
+//  line-height: 1;
+//}
+//
+//h1 {
+//  font-size: 3em;
+//  letter-spacing: -2px;
+//  margin-bottom: 30px;
+//  text-align: center;
+//}
+//
+//h2 {
+//  font-size: 1.2em;
+//  letter-spacing: -1px;
+//  margin-bottom: 30px;
+//  text-align: center;
+//  font-weight: normal;
+//  color: #777;
+//}
+//
+//p {
+//  font-size: 1.5em;
+//  line-height: 1.7em;
+//  padding: 5px;
+//}
+//
+//td {
+//  font-size: 1.5em;
+//  color: #000000;
+//}
+//
+//th {
+//  width: 10%;
+//  text-align: center;
+//  font-size: 1.5em;
+//
+//}
+//
+//a {
+//  color: #000000;
+//  display: inline-block;
+//
+//  :hover {
+//    opacity: 0.6;
+//  }
+//}
+///* header */
+//
+////#logo {
+////  float: left;
+////
+////  font-size: 1.7em;
+////  color: #fff;
+////  letter-spacing: -1px;
+////  padding-top: 0.3%;
+////  font-weight: bold;
+////}
+//
+////.box {
+////  border: 1px solid;
+////  border-color: #696969;
+////  border-radius: 10px;
+////  padding: 1px;
+////}
+//
+////#logo:hover {
+////  color: #fff;
+////  text-decoration: none;
+////}
+//
+//
+//header {
+//  width: 100%;
+//  text-align: center;
+//  padding: 20px;
+//  position: absolute;
+//}
+//
+//
+///* footer */
+//
+//.wrapper{
+//  min-height: 100vh;
+//  position: relative;
+//  padding-bottom: 120px;
+//  box-sizing: border-box;
+//}
+//
+//footer {
+//  width: 100%;
+//  text-align: center;
+//  border-top: 1px solid #eaeaea;
+//  color: #777;
+//  padding: 30px;
+//  position: absolute;
+//  bottom: 0;
+//}
+//
+//footer a {
+//  color: #555;
+//}
+//
+//footer a:hover {
+//  color: #222;
+//}
+//
+//footer small {
+//  float: left;
+//}
+//
+//
+///* forms */
+//
+////input, textarea, select, .uneditable-input {
+////  border: 1px solid #bbb;
+////  width: 100%;
+////  margin-bottom: 15px;
+////  text-align: left;
+////  padding-top: 10px;
+////  @include box_sizing;
+////}
+////
+////input {
+////  height: auto !important;
+////}
+////
+////div {
+////  &.field, &.actions {
+////    margin-bottom: 10px;
+////  }
+////}
+//
+//
+//
+////#error_explanation {
+////  color: red;
+////  text-align: center;
+////  ul {
+////
+////    color: red;
+////    margin: 0 0 30px 0;
+////  }
+////}
+//
+//label {
+//  font-size: 1.5em;
+//  margin: 5% 0% 0%;
+//  float: left;
+//}
+//
+//.actions {
+//  margin: 8% 0% 0%;
+//  padding: 0% 35%;
+//}

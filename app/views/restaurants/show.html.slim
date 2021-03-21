@@ -1,0 +1,12 @@
+= render 'search'
+
+- if @restaurants
+  - @restaurants.each do |restaurant|
+    .card.mb-3
+      .row.no-gutters
+        .col-lg-6
+          =image_tag(restaurant[:photo])
+        .col-lg-6
+          .card-body
+            p = "店舗名: #{restaurant[:name]}"
+            p = "アクセス: #{restaurant[:access]}"
