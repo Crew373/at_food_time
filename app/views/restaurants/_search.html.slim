@@ -1,0 +1,8 @@
+/ = form_for(@restaurant, url: show_path, data: { remote: true}) do |f|
+= form_with(model: @restaurant, id: "search_input") do |f|
+  = f.label '半径'
+  = f.select :range, [['300m', 1], ['500m', 2], ['1000m', 3], ['2000m', 4], ['3000m', 5]],
+              include_blank: '選択して下さい'
+
+  = f.submit  '近くのレストランを検索', class: "search_submit-btn"
+  = javascript_pack_tag 'geolocation'

@@ -1,0 +1,13 @@
+table.table
+  thead
+    tr
+      th
+      th 店舗名称
+      th 住所
+      th 開店時間
+  tbody
+    tr
+      td = image_tag(@restaurant[:photo])
+      td = @restaurant[:name]
+      td = @restaurant[:address]
+      td = @restaurant[:open]
