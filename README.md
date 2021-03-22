@@ -1,24 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 食べ時
+位置情報を使用して、近くにある飲食店を検索するWebアプリケーションです。
 
-Things you may want to cover:
+# Requirement
+- Ruby 2.6.2
+- Rails 6.1.3
+- rbenv
+- Bootstrap 4.3.1
+- Geolocation API
+- ホットペッパーグルメサーチ API
 
-* Ruby version
+ホットペッパーグルメサーチ APIはリクルートWEBサービスから新規登録し、API keyを取得してください。  
+[リクルートWEBサービス](https://webservice.recruit.co.jp/index.html)
 
-* System dependencies
+# Installation
+- rbenv
+```bash
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+  git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+  ~/.rbenv/bin/rbenv init  # 出力される指示に従う
+  source ~/.bash_profile
+```
 
-* Configuration
+- Ruby 2.6.2
+```bash
+  rbenv install 2.6.2
+```
 
-* Database creation
+- Rails 6.1.3
+```bash
+  gem install rails
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Bootstrap 4.1.3
+    - Gemfileに追記
+  ```text
+      gem 'bootstrap', '~> 4.1.3'  
+    ```
+    
+  - terminal
+  ```bash
+      bundle install
+    ```
+  
+  - app/assets/stylesheets/application.css に以下を追記
+  - ファイル名を変更: application.css → application.scss
+  ```scss
+      @import "bootstrap";
+    ```
+  
+  - app/javascripts/packs/application.js　に追記
+  ```js
+      //= require bootstrap
+    ```

@@ -11,9 +11,6 @@ gem 'jquery-rails'
 gem 'slim-rails'
 gem 'html2slim'
 
-# add gon(rails側の変数をjs側で使うためのgem)
-gem 'gon'
-
 # add jquery
 gem 'jquery-turbolinks'
 
