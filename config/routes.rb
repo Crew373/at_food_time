@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get '/new',       to: 'restaurants#new'
   get '/show',      to: 'restaurants#show'
-  get '/top',  to: 'restaurants#top'
+  get '/top',       to: 'restaurants#top'
 
   post '/search',    to: 'restaurants#create'
 

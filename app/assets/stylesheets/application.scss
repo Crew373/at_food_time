@@ -16,11 +16,43 @@
 
 @import "bootstrap";
 
+/* header */
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+}
+
+#logo {
+  float: left;
+
+  font-size: 1.7em;
+  color: #000;
+  letter-spacing: -1px;
+  padding-top: 0.3%;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+header ul li {
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 1.5em;
+}
+
+header ul li:nth-child(1) {
+  color: #000;
+}
+
 /* mixins, variables, etc. */
 
-
 body {
-  padding-top: 10%;
   width: 100%;
   text-align:center;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -46,15 +78,6 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #777;
-}
-
 p {
   font-size: 1.5em;
   line-height: 1.7em;
@@ -76,19 +99,12 @@ th {
 a {
   color: #000000;
   display: inline-block;
-
   :hover {
     opacity: 0.6;
   }
 }
-/* header */
 
-header {
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-}
+
 
 /* footer */
 

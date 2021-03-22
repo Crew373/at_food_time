@@ -14,6 +14,9 @@ class RestaurantsController < ApplicationController
 
     # 緯度･経度･半径を使い近い順に検索、インスタンス変数に格納
     @restaurants = Restaurant.search_location(lat, lng, range, 0)
+
+    # Arrayに対してKaminariを適用する
+    @restaurants = Kaminari.paginate_array(@restaurants).page(params[:page]).per(5)
   end
 
   def top
@@ -38,11 +41,6 @@ class RestaurantsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  # def set_task
-  #   @restaurant = Restaurant.find(params[:id])
-  # end
-
   # Only allow a list of trusted parameters through.
   def restaurant_params
     params.permit(:range, :latitude, :longitude)

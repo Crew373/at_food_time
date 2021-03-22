@@ -11,3 +11,5 @@
             .card-body
               p = "店舗名: #{restaurant[:name]}"
               p = "アクセス: #{restaurant[:access]}"
+
+= paginate @restaurants
