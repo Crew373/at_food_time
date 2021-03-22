@@ -1,13 +1,19 @@
-table.table
-  thead
-    tr
-      th
-      th 店舗名称
-      th 住所
-      th 開店時間
-  tbody
-    tr
-      td = image_tag(@restaurant[:photo])
-      td = @restaurant[:name]
-      td = @restaurant[:address]
-      td = @restaurant[:open]
+h3 お店情報
+
+= image_tag(@restaurant[:photo])
+
+
+table.table-bordered
+  tr
+    th 店舗名称
+    td = @restaurant[:name]
+
+  tr
+    th 住所
+    td = @restaurant[:address]
+
+  tr
+    th 開店時間
+    td = @restaurant[:open]
+
+= link_to "一覧へ", show_path

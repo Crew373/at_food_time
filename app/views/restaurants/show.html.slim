@@ -3,13 +3,13 @@
 - if @restaurants
   - @restaurants.each do |restaurant|
     = link_to top_path(restaurant) do
-      .card.mb-3
+      .card-deck.card
         .row.no-gutters
-          .col-lg-6
+          .col-lg-4
             = image_tag(restaurant[:photo])
-          .col-lg-6
+          .col-lg-8
             .card-body
-              p = "店舗名: #{restaurant[:name]}"
+              p = "店舗名称: #{restaurant[:name]}"
               p = "アクセス: #{restaurant[:access]}"
 
 = paginate @restaurants
