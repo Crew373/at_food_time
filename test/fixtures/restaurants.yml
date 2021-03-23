@@ -4,14 +4,18 @@ one:
   name: MyString
   access: MyString
   address: MyString
-  logo_img: 
   open: 2021-03-14 04:06:49
-  photo: 
+  photo:
+  range: 1
+  latitude:
+  longitude:
 
 two:
   name: MyString
   access: MyString
   address: MyString
-  logo_img: 
   open: 2021-03-14 04:06:49
-  photo: 
+  photo:
+  range: 1
+  latitude:
+  longitude:
