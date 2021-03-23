@@ -9,7 +9,6 @@ class Restaurant < ApplicationRecord
       name:     dt["name"],
       access:   dt["access"],
       address:  dt["address"],
-      logo_img: dt["logo_img"],
       open:     dt["open"],
       photo:    dt["photo"]["pc"]["l"]
       })
