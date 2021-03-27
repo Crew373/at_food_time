@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   get '/show',      to: 'restaurants#show'
   get '/top',       to: 'restaurants#top'
 
-  post '/search',    to: 'restaurants#create'
+  post '/search',   to: 'locations#create'
 
   root 'restaurants#index'
 
   resource :restaurants
+  resource :location
 end

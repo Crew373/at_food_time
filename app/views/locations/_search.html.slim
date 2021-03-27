@@ -1,4 +1,4 @@
-= form_with(model: @restaurant, id: "search_input") do |f|
+= form_with(model: @location, id: "search_input") do |f|
   = f.select :range, [['300m圏内', 1], ['500m圏内', 2], ['1000m圏内', 3], ['2000m圏内', 4], ['3000m圏内', 5]],
               include_blank: '選択して下さい', class: "form-select"
 
