@@ -18,7 +18,6 @@ module HotpepperApi
     req = Net::HTTP::Get.new(uri)
     res = http.request(req)
     res_data = Hash.from_xml(res.body)
-    return res_data
   end
 
   # 検索結果が0件ならtrue

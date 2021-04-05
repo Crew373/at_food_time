@@ -24,12 +24,6 @@ class RestaurantsController < ApplicationController
     @restaurant = params
   end
 
-
-  def create
-    @restaurant = Restaurant.new(restaurant_params)
-    @restaurant.save
-  end
-
   private
   # Only allow a list of trusted parameters through.
   def restaurant_params

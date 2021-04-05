@@ -22,5 +22,14 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Rails at_food_time: test" uuid="4690970a-e6d2-4481-bcb4-2db30d0bb1f7">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Crew_\RubymineProjects\at_food_time\db\test.sqlite3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

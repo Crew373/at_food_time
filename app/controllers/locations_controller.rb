@@ -3,8 +3,7 @@ class LocationsController < ApplicationController
   include AjaxHelper
 
   def create
-    @location = Location.new(location_params)
-    @location.save
+    @location = Location.create(location_params)
 
     # jsを利用してredirectする
     respond_to do |format|

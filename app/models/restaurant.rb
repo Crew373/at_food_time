@@ -16,10 +16,10 @@ class Restaurant < ApplicationRecord
     return shop
   end
 
-  # 現在地から半径nmのお店を検索
+  # 現在地から半径rangeのお店を検索
   def self.search_location(lat, lng, range, order)
     restaurants = HotpepperApi.search_at_location(lat, lng, range, order)
     shop = get_shop_info(restaurants)
-    return shop
   end
+
 end
