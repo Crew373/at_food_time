@@ -55,3 +55,18 @@
   ```js
       //= require bootstrap
     ```
+  
+  - 取得したAPI keyをconfig/credentials.yml.encに追加する
+  ```bash
+  # 既存のファイルを一度削除する
+  rm config/credentials.yml.enc
+  # 新規に作成してvimで編集する
+  EDITOR="vim" bin/rails credentials:edit
+  ```
+
+  - config/credentials.yml.enc に追記
+  ```yml
+  hotpepper:
+      key: xxxx
+  ```
+  xxxxの部分は取得したAPI keyをsetしてください。
