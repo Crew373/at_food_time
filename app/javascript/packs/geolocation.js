@@ -32,15 +32,10 @@ function successFunc(position) {
         type: "POST",
         url: '/search',
         data: {
-            // authenticity_token: auth,
             range: restaurant_range,
             latitude: lat,
             longitude: lng
         }
-        // dataType: "JSON",　
-        // processData: false,
-        // contentType: false
-        // async: false
     })
         .done(function(data) {
             console.log("success");
@@ -48,7 +43,7 @@ function successFunc(position) {
         })
         .fail(function(data) {
             console.log(data)
-            alert("error");
+            alert("検索する範囲を指定してください");
         })
         .always(function() {
             $(".search_submit-btn").prop("disabled", false);

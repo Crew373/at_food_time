@@ -7,7 +7,12 @@ class LocationsController < ApplicationController
 
     # jsを利用してredirectする
     respond_to do |format|
-      format.js { render ajax_redirect_to(show_path) }
+      if @location.save
+        format.js { render ajax_redirect_to(show_path) }
+      else
+        format.js { render ajax_redirect_to(search_path) }
+      end
+
     end
   end
 
