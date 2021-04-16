@@ -10,7 +10,7 @@ class LocationsController < ApplicationController
       if @location.save
         format.js { render ajax_redirect_to(show_path) }
       else
-        format.js { render ajax_redirect_to(search_path) }
+        format.js { render json: @location.errors, status: :unprocessable_entity }
       end
 
     end

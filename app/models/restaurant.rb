@@ -1,5 +1,4 @@
 class Restaurant < ApplicationRecord
-  validates :range, presence: true
 
   # 得たデータを必要なものだけに絞る
   def self.get_shop_info(data)
